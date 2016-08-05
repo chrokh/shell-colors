@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export SHELL_COLOR_CONF="$HOME/.bashbg"
 export VIM_COLOR_CONF="$HOME/.vimbg"
 function theme {
