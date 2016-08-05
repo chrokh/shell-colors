@@ -1,9 +1,3 @@
-# Base16 Shell helper
-# Inspired by:
-#   http://johnmorales.com/blog/2015/01/09/base16-shell-tmux-vim-color-switching-dead-simple/
-# Dependencies:
-#   https://github.com/chriskempson/base16-shell
-#   https://github.com/chriskempson/base16-vim
 export SHELL_COLOR_CONF="$HOME/.bashbg"
 export VIM_COLOR_CONF="$HOME/.vimbg"
 function theme {
