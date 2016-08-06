@@ -28,7 +28,7 @@ function theme {
   source $shell_color_conf
 
   # Set vim colors
-  echo "colorscheme $them" >> $vim_color_conf
+  echo "colorscheme $them" > ~/.vimrc_background
 }
 
 
