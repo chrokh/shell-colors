@@ -15,9 +15,10 @@ This project is a simple OSX CLI wrapper for Base16 Shell.
 
 # Install
 
-`brew tap chrokh/tap`
-
-`brew install shell-colors`
+```sh
+$ brew tap chrokh/tap
+$ brew install shell-colors
+```
 
 
 
