@@ -15,10 +15,38 @@ This project is a simple OSX CLI wrapper for Base16 Shell.
 
 # Install
 
+Make sure you have installed base16-shell...
+
+- [base-16-shell](https://github.com/chriskempson/base16-shell)
+
+..then simply brew install shell-colors.
 ```sh
 $ brew tap chrokh/tap
 $ brew install shell-colors
 ```
+
+
+
+# Vim users
+
+Never mind this information if you are not a Vim user.
+Shell-colors can keep your Vim color scheme in sync with your shell color scheme.
+
+Make sure you have installed base16-vim...
+
+- [base-16-vim](https://github.com/chriskempson/base16-vim)
+
+...and then put this in your .vimrc...
+
+```vim
+if filereadable(expand("~/.vimrc_background"))
+  "let base16colorspace=256
+  source ~/.vimrc_background
+endif
+```
+
+...and uncomment the commented line if you want to honor the original 16 ANSI colors.
+Read more about that [here](https://github.com/chriskempson/base16-vim#256-colorspace).
 
 
 
@@ -41,12 +69,6 @@ Happy coding :)
     - `theme prev` Switches to prev scheme (Alias: `p`)
 - Integrations
     - Tmux (colors of e.g. tmux "tabs" should switch with color schemes)
-
-
-# Dependencies
-
-- [base-16-shell](https://github.com/chriskempson/base16-shell)
-- [base-16-vim](https://github.com/chriskempson/base16-vim) (optional - if you want the same colors in Vim)
 
 
 
