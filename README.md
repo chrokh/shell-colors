@@ -21,6 +21,17 @@ This project is a simple OSX CLI wrapper for Base16 Shell.
 
 
 
+# Available color schemes
+
+List of included color schemes can be found 
+[here](https://github.com/chriskempson/base16-shell/tree/master/scripts).
+
+IMPORTANT: When running the `theme` command you must omit the initial `base16` and the `.sh` extension. So a theme file named: `base16-default-dark.sh` is sourced by running `theme default-dark`.
+
+Happy coding :)
+
+
+
 # Work in progress
 
 - Commands
