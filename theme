@@ -2,6 +2,8 @@
 
 export SHELL_COLOR_CONF="$HOME/.bashbg"
 export VIM_COLOR_CONF="$HOME/.vimbg"
+
+
 function theme {
   local default_name="default-dark"
 
@@ -29,10 +31,7 @@ function theme {
   echo "colorscheme $them" >> $VIM_COLOR_CONF
 }
 
-# set default theme if not set
-if [ ! -f $SHELL_COLOR_CONF ]; then
-  theme default
-fi
 
-source $SHELL_COLOR_CONF
+# Switch theme
+theme $1
 
