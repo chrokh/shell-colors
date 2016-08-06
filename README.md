@@ -1,7 +1,8 @@
 Color scheme switcher for OSX terminals.
 
-[Base16] is syntax highlighting for hackers. [Base16 Shell] is the hands down best way to manage color schemes. This project is a simple OSX CLI wrapper for Base16 Shell.
-Changes are to be expected.
+[Base16] is syntax highlighting for hackers.
+[Base16 Shell] is a great way of switching colors in shells.
+This project is a simple OSX CLI wrapper for Base16 Shell.
 
 
 
@@ -30,7 +31,7 @@ Using brew... (coming soon)
 # Dependencies
 
 - [base-16-shell](https://github.com/chriskempson/base16-shell)
-- [base-16-vim](https://github.com/chriskempson/base16-vim) (optional - auto-update colors in Vim)
+- [base-16-vim](https://github.com/chriskempson/base16-vim) (optional - if you want the same colors in Vim)
 
 
 
