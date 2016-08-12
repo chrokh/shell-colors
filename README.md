@@ -60,6 +60,9 @@ Happy coding :)
     - `theme list` Lists available schemes (Alias: `ls`)
     - `theme next` Switches to next scheme (Alias: `n`)
     - `theme prev` Switches to prev scheme (Alias: `p`)
+- Flags
+    - `--verbose` When not running with verbose acts almost silently.
+    - `--silent` Just does what it needs to do without the talking.
 - Integrations
     - Tmux (colors of e.g. tmux "tabs" should switch with color schemes)
 
