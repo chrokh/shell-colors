@@ -10,6 +10,8 @@ This project is a simple OSX CLI wrapper for Base16 Shell.
 
 - `theme` Switches to default scheme
 - `theme [name]` Switches to scheme
+- `theme next` Switches to next scheme (Alias: `n`)
+- `theme prev` Switches to prev scheme (Alias: `p`)
 
 
 
@@ -58,8 +60,6 @@ Happy coding :)
 
 - Commands
     - `theme list` Lists available schemes (Alias: `ls`)
-    - `theme next` Switches to next scheme (Alias: `n`)
-    - `theme prev` Switches to prev scheme (Alias: `p`)
 - Flags
     - `--verbose` When not running with verbose acts almost silently.
     - `--silent` Just does what it needs to do without the talking.
