@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+# Sources specific theme
 function theme {
   local shell_color_conf="$HOME/.bashbg"
   local vim_color_conf="$HOME/.vimbg"
@@ -32,6 +33,37 @@ function theme {
 }
 
 
-# Switch theme
-theme $1
+# Sources next theme
+function next {
+  local current=`grep --only-matching '[^\/]\+\.sh' ~/.bashbg`
+  local compact=`echo $current | sed -n 's/\.sh//p' | sed -n 's/base16-//p'`
+  local next=`find ~/.config/base16-shell/scripts/*.sh | grep ${compact} -A1 | tail -n 1`
+  local name=`echo $next | sed -n 's/^.*base16-//p' | sed -n 's/\.sh//p'`
+  theme $name
+}
+
+
+# Sources previous theme
+function prev {
+  local current=`grep --only-matching '[^\/]\+\.sh' ~/.bashbg`
+  local compact=`echo $current | sed -n 's/\.sh//p' | sed -n 's/base16-//p'`
+  local next=`find ~/.config/base16-shell/scripts/*.sh | grep ${compact} -B1 | head -n 1`
+  local name=`echo $next | sed -n 's/^.*base16-//p' | sed -n 's/\.sh//p'`
+  theme $name
+}
+
+
+function main {
+  local arg="${1:-none}"
+  echo $arg
+  if [ $arg = 'n' ] || [ $arg = 'next' ]; then
+    next
+  elif [ $arg = 'p' ] || [ $arg = 'prev' ]; then
+    prev
+  else
+    theme $1
+  fi
+}
+
+main $1
 
