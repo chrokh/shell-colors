@@ -1,3 +1,9 @@
+# DEPRECATED
+
+In favor of [AuditeMarlow/base16-manager](https://github.com/AuditeMarlow/base16-manager/)
+
+------------------------
+
 Color scheme switcher for OSX terminals.
 
 [Base16] is syntax highlighting for hackers.
